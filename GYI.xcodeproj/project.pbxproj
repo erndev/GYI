@@ -21,6 +21,7 @@
 		46CCE5AC1E0309AB0005239C /* YoutubeDLGUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 46CCE5A01E0309AB0005239C /* YoutubeDLGUI.xcdatamodeld */; };
 		46D41C4D1E2ED71900F50104 /* AccountModificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D41C4C1E2ED71900F50104 /* AccountModificationViewController.swift */; };
 		46FC3B221E27F9ED007D89B6 /* MenuPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46FC3B201E27F9ED007D89B6 /* MenuPopoverViewController.swift */; };
+		94774E2921476E5800F7AC93 /* YoutubeUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94774E2821476E5800F7AC93 /* YoutubeUrl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		46CCE5A11E0309AB0005239C /* YoutubeDLGUI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = YoutubeDLGUI.xcdatamodel; sourceTree = "<group>"; };
 		46D41C4C1E2ED71900F50104 /* AccountModificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccountModificationViewController.swift; path = GYI/AccountModificationViewController.swift; sourceTree = "<group>"; };
 		46FC3B201E27F9ED007D89B6 /* MenuPopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MenuPopoverViewController.swift; path = GYI/MenuPopoverViewController.swift; sourceTree = "<group>"; };
+		94774E2821476E5800F7AC93 /* YoutubeUrl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = YoutubeUrl.swift; path = GYI/YoutubeUrl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 		46CCE5AD1E0309B30005239C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				94774E2821476E5800F7AC93 /* YoutubeUrl.swift */,
 				46CCE5941E0309AB0005239C /* Account + Convenience.swift */,
 				46CCE59E1E0309AB0005239C /* Stack.swift */,
 				46CCE5A01E0309AB0005239C /* YoutubeDLGUI.xcdatamodeld */,
@@ -217,6 +220,7 @@
 				46CCE5A21E0309AB0005239C /* Account + Convenience.swift in Sources */,
 				46CCE5A71E0309AB0005239C /* DownloadController.swift in Sources */,
 				46CCE5AC1E0309AB0005239C /* YoutubeDLGUI.xcdatamodeld in Sources */,
+				94774E2921476E5800F7AC93 /* YoutubeUrl.swift in Sources */,
 				46D41C4D1E2ED71900F50104 /* AccountModificationViewController.swift in Sources */,
 				463EACD51E69FA5100A1AEB6 /* VideoPasswordSubmissionViewController.swift in Sources */,
 			);

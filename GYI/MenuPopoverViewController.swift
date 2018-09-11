@@ -90,6 +90,7 @@ class MenuPopoverViewController: NSViewController, NSPopoverDelegate, AccountCre
     override func viewWillAppear() {
         
         setupAccountSelectionPopUpButton()
+        addYoutubeLinkFromPasteboard();
     }
     
     @objc func processDidEnd() {
@@ -135,8 +136,21 @@ class MenuPopoverViewController: NSViewController, NSPopoverDelegate, AccountCre
     @IBAction func manageAccountsButtonClicked(_ sender: NSMenuItem) {
         manageAccountsSheet()
     }
-    
-    
+  
+    func addYoutubeLinkFromPasteboard() {
+      guard let items = NSPasteboard.general.pasteboardItems else {
+        return;
+      }
+      for element in items {
+        if let str = element.string(forType: NSPasteboard.PasteboardType.string),
+          YoutubeUrl.isYoutubeUrl(string:str)
+        {
+          inputTextField.stringValue = str;
+          return;
+        }
+      }
+    }
+  
     // MARK: - Account Creation/Deletion Delegates
     
     func newAccountWasCreated() {
